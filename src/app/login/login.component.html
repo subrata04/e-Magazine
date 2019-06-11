@@ -1,36 +1,42 @@
+<div class="body_bg">
+    <div class="body_bg_inner">
 
-
-<mat-card class="login_wrapper ">
+        <mat-card class="login_wrapper">
     <span class="logo_wrapper">
         <span class="logo">
             <img src="../../assets/images/images.png">
          </span>
     </span>
 
-<mat-card class="login_wrapper_inner">
-<mat-card-header> Login</mat-card-header>
-    <form novalidate [formGroup]="loginform" name="loginform" >
-        <mat-form-field >
+            <mat-card class="login_wrapper_inner">
+                <mat-card-header> Login</mat-card-header>
+                <form novalidate [formGroup]="loginform" name="loginform">
+                    <mat-form-field>
 
-                <input matInput type="email"  name="your-email" value="" size="40" placeholder="Username / Email" [formControl]="loginform.controls['email']">
+                        <input matInput type="email" name="your-email" value="" size="40" placeholder="Username / Email"
+                               [formControl]="loginform.controls['email']">
 
-                 <span *ngIf ="loginform.controls['email'].touched && !loginform.controls['email'].valid">Email id is Required !</span>
+                        <span *ngIf="loginform.controls['email'].touched && !loginform.controls['email'].valid">Email id is Required !</span>
 
-        </mat-form-field>
-        <mat-form-field>
-                <input matInput type="password"  name="your-password" value="" size="40" placeholder="Password" [formControl]="loginform.controls['password']">
-        <span *ngIf ="loginform.controls['password'].touched && !loginform.controls['password'].valid">Password is Required !</span>
-        </mat-form-field>
-        <!--<input mat-flat-button color="primary" type="submit" name="Submit">-->
-        <button class="Login_button" mat-flat-button color="primary">Login</button>
-    </form>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput type="password" name="your-password" value="" size="40" placeholder="Password"
+                               [formControl]="loginform.controls['password']">
+                        <span *ngIf="loginform.controls['password'].touched && !loginform.controls['password'].valid">Password is Required !</span>
+                    </mat-form-field>
+                    <!--<input mat-flat-button color="primary" type="submit" name="Submit">-->
+                    <button class="Login_button" mat-flat-button color="primary">Login</button>
+                </form>
 
-    <mat-card-footer>
-        <!--<p>New Here? <a [routerLink]="['/signup']" >Signup </a></p>-->
-        <p> Forget Password? <a [routerLink]="['/signup']" >Click Here</a></p>
-    </mat-card-footer>
+                <mat-card-footer>
+                    <!--<p>New Here? <a [routerLink]="['/signup']" >Signup </a></p>-->
+                    <p> Forget Password? <a [routerLink]="['/signup']">Click Here</a></p>
+                </mat-card-footer>
 
-</mat-card>
+            </mat-card>
 
 
-</mat-card>
+        </mat-card>
+    </div>
+
+</div>
