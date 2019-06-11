@@ -1,0 +1,52 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav e-nav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar class="d_logo_wrapper">
+      <div class="d_logo_wrapper1">
+        <img src="../../assets/images/images_dashboard.png">
+      </div>
+
+    </mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="#" routerLink ="/dashboard" routerLinkActive="active">Dashboard</a>
+      <a mat-list-item href="#" routerLink ="/orders" routerLinkActive="active">Orders</a>
+      <a mat-list-item href="#" routerLink ="/analytics" routerLinkActive="active">Analytics</a><br>
+      <a mat-list-item href="#" routerLink ="/category" routerLinkActive="active">Category</a>
+      <a mat-list-item href="#" routerLink ="/collection" routerLinkActive="active">Collections</a>
+      <a mat-list-item href="#" routerLink ="/addmagazine" routerLinkActive="active">Add Magazine</a>
+      <a mat-list-item href="#" routerLink ="/managemagazine" routerLinkActive="active">Manage Magazine</a><br>
+      <a mat-list-item href="#">Online Store</a>
+      <a mat-list-item href="#">Employees</a>
+      <a mat-list-item href="#">Customers</a>
+      <a mat-list-item href="#">Settings</a>
+
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>Emagazine</span>
+      <span>
+          <mat-form-field>
+    <input matInput type="text" class="example-right-align">
+    <span matPrefix><i class="material-icons">
+search
+</i></span>
+
+  </mat-form-field>
+      </span>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -12,6 +12,12 @@ import { DemoMaterialModule } from '../material-module'
 import { FormsModule }   from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AddadminComponent } from './addadmin/addadmin.component';
+import { LeftNavComponent } from './left-nav/left-nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ManagemagazineComponent } from './managemagazine/managemagazine.component';
+import { AddmagazineComponent } from './addmagazine/addmagazine.component';
 
 
 
@@ -28,6 +34,10 @@ import {FormBuilder} from '@angular/forms';
     ForgetpasswordComponent,
     SignupComponent,
     AddadminComponent,
+    LeftNavComponent,
+    DashboardComponent,
+    ManagemagazineComponent,
+    AddmagazineComponent,
 
 
   ],
@@ -38,7 +48,13 @@ import {FormBuilder} from '@angular/forms';
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
-    DemoMaterialModule
+    DemoMaterialModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
