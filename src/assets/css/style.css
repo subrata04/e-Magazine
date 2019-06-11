@@ -144,7 +144,7 @@ url('../fonts/Noteworthy-Bold.woff.woff') format('woff'), font-family: 'Notewort
     width: 540px;
      margin: 0 auto;
     padding: 0 !important;
-    padding-bottom: 50px !important;
+    padding-bottom: 35px !important;
     box-shadow: none!important;
     border: 1px solid #f1f1f1;
 }
