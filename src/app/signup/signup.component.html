@@ -1,0 +1,51 @@
+
+
+<mat-card class="login_wrapper ">
+    <span class="logo_wrapper">
+        <span class="logo">
+            <img src="../../assets/images/images.png">
+         </span>
+    </span>
+
+    <mat-card class="login_wrapper_inner">
+        <mat-card-header> Sign Up</mat-card-header>
+        <form  >
+            <mat-form-field >
+                <input matInput type="text" placeholder="First Name" >
+                <!--<span *ngIf ="loginform.controls['email'].touched && !loginform.controls['email'].valid">Email id is Required !</span>-->
+
+            </mat-form-field>
+
+            <mat-form-field >
+                <input matInput type="text" placeholder="Last Name" >
+                <!--<span *ngIf ="loginform.controls['email'].touched && !loginform.controls['email'].valid">Email id is Required !</span>-->
+
+            </mat-form-field>
+
+            <mat-form-field >
+                <input matInput type="email" placeholder="Email Address" >
+                <!--<span *ngIf ="loginform.controls['email'].touched && !loginform.controls['email'].valid">Email id is Required !</span>-->
+
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput type="password" placeholder="Choose Password" >
+                <!--<span *ngIf ="loginform.controls['password'].touched && !loginform.controls['password'].valid">Password is Required !</span>-->
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="password" placeholder="Confirm Password" >
+                <!--<span *ngIf ="loginform.controls['password'].touched && !loginform.controls['password'].valid">Password is Required !</span>-->
+            </mat-form-field>
+            <!--<input mat-flat-button color="primary" type="submit" name="Submit">-->
+            <button class="Login_button" mat-flat-button color="primary">Sign Up</button>
+        </form>
+
+        <mat-card-footer>
+            <p>Already Registered ? <a [routerLink]="['/login']" >Login </a></p>
+            <!--<p> Forget Password? <a [routerLink]="['/signup']" >Click Here</a></p>-->
+        </mat-card-footer>
+
+    </mat-card>
+
+
+</mat-card>
