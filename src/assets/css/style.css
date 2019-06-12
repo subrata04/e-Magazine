@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -270,17 +271,19 @@ mat-sidenav-content .mat-toolbar{ background: #262d47!important; }
 .dashboad_wrapper{
     margin: 16px;
     background: transparent!important;
+    box-shadow: none!important;
 }
 .dashboad_wrapper .mat-card-title{
-     color: #feffff;
-     font-family: "CenturyGothic";
-     font-weight: bold;
-     font-size: 18px;
+    color: #feffff;
+    font-family: "CenturyGothic";
+    font-weight: bold;
+    font-size: 18px!important;
  }
 .dashboad_wrapper .mat-card-subtitle{
     color: #4f5675;
     font-family: "CenturyGothic";
     font-size: 16px;
+    font-weight: bold;
 }
 
 .dashboad_wrapper .inner_wrap{
@@ -288,9 +291,10 @@ mat-sidenav-content .mat-toolbar{ background: #262d47!important; }
     justify-content: space-between;
 }
 .dashboad_wrapper .inner_wrap .inner_content_wrap{
-    width: 24%;
-    min-height: 175px;
+    width: 22%;
+    min-height: 80px;
     border-radius: 4px;
+    padding: 30px 15px;
 }
 .dashboad_wrapper .inner_wrap .inner_content_wrap:nth-of-type(1){
     background-image: linear-gradient(to right, #564cfb, #6a45fd, #7d3dfe, #8e31fe, #9f1ffe);
@@ -305,3 +309,82 @@ mat-sidenav-content .mat-toolbar{ background: #262d47!important; }
 .dashboad_wrapper .inner_wrap .inner_content_wrap:nth-of-type(4) {
     background-image: linear-gradient(to right, #ecbd65, #ecaa54, #ec9746, #eb823d, #ea6b38);
 }
+.dashboad_wrapper .inner_wrap .inner_content_wrap mat-card-subtitle{
+    color: #a2a1fe;
+    font-family: "CenturyGothic";
+    font-size: 16px;
+    font-weight: bold;
+}
+.dashboad_wrapper .inner_wrap .inner_content_wrap mat-card-title{
+    color: #faffdf;
+    font-family: "CenturyGothic";
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.dashboad_wrapper .inner_wrap .inner_content_wrap mat-card-title span{
+    font-size: 17px;
+    vertical-align: bottom;
+    display: inline-flex;
+    font-family: "CenturyGothic";
+    color:#d8b0ff;
+}
+.dashboad_wrapper .inner_wrap .orders mat-card-title{ color: #f8fff3; }
+.dashboad_wrapper .inner_wrap .inner_content_wrap mat-card-title span{color: #b781ff;}
+.dashboad_wrapper .inner_wrap .orders mat-card-subtitle{
+    color: #ffb3a8;
+}
+.dashboad_wrapper .inner_wrap .orders mat-card-title{ color: #f8fff3; }
+.dashboad_wrapper .inner_wrap .orders mat-card-title span{color: #ffafb7;}
+.dashboad_wrapper .inner_wrap .orders mat-card-subtitle{ color: #ffe3df; }
+
+.dashboad_wrapper .inner_wrap .products mat-card-title{ color: #cbf6f9; }
+.dashboad_wrapper .inner_wrap .products mat-card-title span{color: #ace4e5;}
+.dashboad_wrapper .inner_wrap .products mat-card-subtitle{ color: #fefdf8;}
+
+.dashboad_wrapper .inner_wrap .customers mat-card-subtitle{ color: #ffe9d1;}
+.dashboad_wrapper .inner_wrap .customers mat-card-title{ color: #fffcfa; }
+.dashboad_wrapper .inner_wrap .customers mat-card-title span{color: #ffcda2;}
+
+/*2nd Wrapper*/
+.dashboad_2nd_wrap{
+    margin: 0 32px 16px 32px;
+    background: #262d47!important;
+    /*padding: 0!important;*/
+}
+.dashboad_2nd_wrap .upper_area{
+    display: flex;justify-content: space-between; padding: 0;
+}
+.dashboad_2nd_wrap .title{
+    color: #c0c5cb;
+    font-family: "CenturyGothic";
+    font-weight: bold;
+    font-size: 18px!important;
+}
+.dashboad_2nd_wrap .date_range{ color: #616882; font-family: "CenturyGothic"; font-size: 18px;}
+.dashboad_2nd_wrap .date_range .mat-form-field-appearance-legacy
+.mat-form-field-prefix .mat-icon-button,
+.mat-form-field-appearance-legacy .mat-form-field-suffix
+.mat-icon-button {
+    font: inherit;
+    vertical-align: baseline;
+    color: #757b90;
+}
+  .menu23{
+    background: #262d47!important;
+}
+  .menu23 .mat-menu-content{
+      padding: 0!important;
+  }
+.menu23 .mat-menu-item {
+    background: 0 0;
+    color: rgb(117, 123, 144);
+    border-bottom: 1px solid #333d5f!important;
+    margin: 0!important;
+    font-size: 16px;
+    font-family: "CenturyGothic";
+    font-weight: bold;
+}
+.menu23 .mat-menu-item:nth-last-child(1){
+     border-bottom: 0px solid #333d5f!important;
+ }

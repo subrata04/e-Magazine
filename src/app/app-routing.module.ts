@@ -6,6 +6,7 @@ import {SignupComponent} from '../app/signup/signup.component'
 import {DashboardComponent} from "./dashboard/dashboard.component";
 import {ManagemagazineComponent} from "./managemagazine/managemagazine.component";
 import {AddmagazineComponent} from "./addmagazine/addmagazine.component";
+import {ResetpasswordComponent} from "./resetpassword/resetpassword.component";
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path:'signup',component:SignupComponent},
   { path: 'dashboard', component: DashboardComponent},
   { path: 'managemagazine', component: ManagemagazineComponent},
-  { path: 'addmagazine', component: AddmagazineComponent}
+  { path: 'addmagazine', component: AddmagazineComponent},
+  { path: 'resetpassword', component: ResetpasswordComponent}
 ];
 
 @NgModule({

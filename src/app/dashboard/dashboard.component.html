@@ -6,17 +6,67 @@
   </mat-card-header>
 
   <mat-card-content class="inner_wrap">
-    <span class="inner_content_wrap">
-
+    <span class="inner_content_wrap revenue">
+      <mat-card-subtitle >Total Revenue</mat-card-subtitle>
+      <mat-card-title>242.50 <span><i class="material-icons">arrow_drop_up</i>105345</span></mat-card-title>
     </span>
-    <span class="inner_content_wrap"></span>
-    <span class="inner_content_wrap"></span>
-    <span class="inner_content_wrap"></span>
 
+    <span class="inner_content_wrap orders">
+      <mat-card-subtitle>Orders</mat-card-subtitle>
+      <mat-card-title>1.852 <span><i class="material-icons">arrow_drop_up</i>153</span></mat-card-title>
+    </span>
+    <span class="inner_content_wrap products">
+      <mat-card-subtitle>Products</mat-card-subtitle>
+      <mat-card-title>1.631<span><i class="material-icons">arrow_drop_up</i>1534</span></mat-card-title>
+    </span>
+    <span class="inner_content_wrap customers">
+      <mat-card-subtitle>Customers</mat-card-subtitle>
+      <mat-card-title> 1.356 <span><i class="material-icons">arrow_drop_up</i>427</span></mat-card-title>
+    </span>
   </mat-card-content>
 
-
-
 </mat-card>
+
+
+  <mat-card class="dashboad_2nd_wrap">
+  <mat-toolbar>
+    <mat-toolbar-row class="upper_area">
+      <span class="title">Revenue</span>
+
+      <span class="date_range">
+        From
+      <mat-form-field >
+        <mat-label>Select Date</mat-label>
+        <input matInput [matDatepicker]="picker1">
+        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker #picker1></mat-datepicker>
+      </mat-form-field>
+      To
+      <mat-form-field >
+        <mat-label>Select Date</mat-label>
+        <input matInput [matDatepicker]="picker2">
+        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker #picker2 color="primary"></mat-datepicker>
+      </mat-form-field>
+      <button mat-button [matMenuTriggerFor]="menu"><i class="material-icons">more_horiz</i></button>
+      <mat-menu #menu="matMenu" class="menu23">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+        </span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+
+
+  </mat-card>
+
+
+
+
+
+
+
+
 
 </app-left-nav>
