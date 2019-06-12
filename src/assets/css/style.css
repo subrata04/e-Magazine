@@ -172,6 +172,7 @@ url('../fonts/Noteworthy-Bold.woff.woff') format('woff'), font-family: 'Notewort
     width: 84%;
 
 }
+.d_logo_wrapper1{ display: flex; justify-content: center; align-items: center;}
 
 .login_wrapper > *, .login_wrapper_inner > * {
     display: flex;
@@ -285,7 +286,7 @@ mat-sidenav-content .mat-toolbar{ background: #262d47!important; }
     font-size: 16px;
     font-weight: bold;
 }
-
+.dashboad_wrapper .sub-tittle{ margin-bottom: 16px!important;}
 .dashboad_wrapper .inner_wrap{
     display: flex;
     justify-content: space-between;
@@ -314,6 +315,7 @@ mat-sidenav-content .mat-toolbar{ background: #262d47!important; }
     font-family: "CenturyGothic";
     font-size: 16px;
     font-weight: bold;
+    margin-bottom: 16px!important;
 }
 .dashboad_wrapper .inner_wrap .inner_content_wrap mat-card-title{
     color: #faffdf;
@@ -350,10 +352,10 @@ mat-sidenav-content .mat-toolbar{ background: #262d47!important; }
 .dashboad_2nd_wrap{
     margin: 0 32px 16px 32px;
     background: #262d47!important;
-    /*padding: 0!important;*/
+    padding: 0!important;
 }
 .dashboad_2nd_wrap .upper_area{
-    display: flex;justify-content: space-between; padding: 0;
+    display: flex;justify-content: space-between;
 }
 .dashboad_2nd_wrap .title{
     color: #c0c5cb;
@@ -387,4 +389,66 @@ mat-sidenav-content .mat-toolbar{ background: #262d47!important; }
 }
 .menu23 .mat-menu-item:nth-last-child(1){
      border-bottom: 0px solid #333d5f!important;
+ }
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 40vh;
+    width: 80vw;
+}
+.table_wrapper{
+    display: flex!important;
+    justify-content: space-between;
+    background: transparent!important;
+    padding: 0!important;
+}
+.table_wrapper .table{
+    width: 49.5%;
+    background: #262d47!important;
+    padding:  0!important;
+}
+.dashboad_2nd_wrap .table .table_inner_content{ height: auto!important; margin-bottom: 16px;}
+.dashboad_2nd_wrap .table .table_inner_content .mat-card-title{ margin-bottom: 0px; color: #bac1cb!important; font-family: "CenturyGothic";
+    font-weight: bold;
+    font-size: 18px!important;}
+.dashboad_2nd_wrap .table .table_inner_content .mat-card-title span {
+    font-family: "CenturyGothic";
+    font-weight: bold;
+    font-size: 14px !important;
+    margin-left: 11px;
+    color: #494f65;
+}
+.dashboad_2nd_wrap .table .table_inner_content .dip_icon{
+    color: #494f65;
+}
+.spacer{ flex: 1 1 0;}
+
+.dashboad_2nd_wrap  .mat-card-actions, .mat-card-content, .mat-card-subtitle {
+    display: block;
+    margin-bottom: 0!important;
+}
+
+.dashboad_2nd_wrap .table .mat-elevation-z8{
+    background: transparent!important;
+    width: 100%;
+}
+.dashboad_2nd_wrap .table table{
+    font-family: "CenturyGothic";
+    font-weight: bold!important;
+}
+.dashboad_2nd_wrap .table .mat-header-cell {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "CenturyGothic";
+    color: #44506a;
+}
+
+.dashboad_2nd_wrap .table mat-footer-row, mat-header-row, mat-row, td.mat-cell, td.mat-footer-cell, th.mat-header-cell {
+    border-bottom-color: transparent;
+}
+.dashboad_2nd_wrap .table .mat-cell, .mat-footer-cell {
+    color: #59617b!important;
+}
+.dashboad_2nd_wrap .table table td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type {
+     color: #42bae6!important;
  }

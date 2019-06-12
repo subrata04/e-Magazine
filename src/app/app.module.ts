@@ -22,7 +22,6 @@ import { ResetpasswordComponent } from './resetpassword/resetpassword.component'
 
 
 
-
 /*
 import {FormBuilder} from '@angular/forms';
 */

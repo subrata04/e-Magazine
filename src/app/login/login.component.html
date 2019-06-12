@@ -16,13 +16,13 @@
                         <input matInput type="email" name="your-email" value="" size="40" placeholder="Username / Email"
                                [formControl]="loginform.controls['email']">
 
-                        <span *ngIf="loginform.controls['email'].touched && !loginform.controls['email'].valid">Email id is Required !</span>
+                        <mat-error *ngIf="loginform.controls['email'].touched && !loginform.controls['email'].valid">Email id is Required !</mat-error>
 
                     </mat-form-field>
                     <mat-form-field>
                         <input matInput type="password" name="your-password" value="" size="40" placeholder="Password"
                                [formControl]="loginform.controls['password']">
-                        <span *ngIf="loginform.controls['password'].touched && !loginform.controls['password'].valid">Password is Required !</span>
+                        <mat-error  *ngIf="loginform.controls['password'].touched && !loginform.controls['password'].valid">Password is Required !</mat-error>
                     </mat-form-field>
                     <!--<input mat-flat-button color="primary" type="submit" name="Submit">-->
                     <button class="Login_button" mat-flat-button color="primary">Login</button>
