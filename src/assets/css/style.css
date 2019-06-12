@@ -126,7 +126,8 @@ url('../fonts/Noteworthy-Bold.woff.woff') format('woff'), font-family: 'Notewort
 /*@keyframes spin{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}*/
 
 .body_bg{
-    background-image: linear-gradient(to right top, #1b64a8, #046fae, #007ab4, #0085b8, #008fbb, #008fbb, #008fbb, #008fbb, #0085b8, #007ab4, #046fae, #1b64a8);
+    /*background-image: linear-gradient(to right top, #1b64a8, #046fae, #007ab4, #0085b8, #008fbb, #008fbb, #008fbb, #008fbb, #0085b8, #007ab4, #046fae, #1b64a8);*/
+    background: #1a203a!important;
     overflow-wrap: normal;
     overflow: hidden;
     margin: 0;
@@ -147,11 +148,13 @@ url('../fonts/Noteworthy-Bold.woff.woff') format('woff'), font-family: 'Notewort
     padding: 0 !important;
     padding-bottom: 35px !important;
     box-shadow: none!important;
-    border: 1px solid #f1f1f1;
+    border: 1px solid #594965;
 }
 
 .logo_wrapper {
-    background: url("../images/loginbg.png") no-repeat top center !important;
+    /*background: url("../images/loginbg.png") no-repeat top center !important;*/
+    /*background-image: linear-gradient(to right top, #5955dd, #6b4fe8, #8045f2, #9736fa, #af17ff);*/
+    background-image: linear-gradient(to bottom, #53325c, #432e55, #342a4d, #262544, #1a203a);
     height: 300px;
     justify-content: center;
 }
@@ -185,9 +188,10 @@ url('../fonts/Noteworthy-Bold.woff.woff') format('woff'), font-family: 'Notewort
     font-size: 30px;
     justify-content: center;
     margin-bottom: 15px;
-    font-family: 'CenturyGothic';
+    font-family: 'RobotoRegular';
     font-weight: bold;
-    color: #673ab7;
+    color: #4b3058;
+    text-transform: uppercase;
 }
 
 .login_wrapper_inner .mat-card-header .mat-card-header-text {
@@ -202,6 +206,9 @@ url('../fonts/Noteworthy-Bold.woff.woff') format('woff'), font-family: 'Notewort
     border-radius: 30px;
     font-size: 20px;
     font-family: 'CenturyGothic';
+    /*background-image: linear-gradient(to right bottom, #fb856b, #ff7c76, #ff7383, #ff6d93, #fd68a3)!important;*/
+    background-image: linear-gradient(to bottom, #53325c, #432e55, #342a4d, #262544, #1a203a);
+    
 }
 
 .login_wrapper_inner {

@@ -17,7 +17,7 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ManagemagazineComponent } from './managemagazine/managemagazine.component';
-import { AddmagazineComponent } from './addmagazine/addmagazine.component';
+import {AddmagazineComponent, ModalContent} from './addmagazine/addmagazine.component';
 import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
 
 
@@ -39,7 +39,7 @@ import {FormBuilder} from '@angular/forms';
     ManagemagazineComponent,
     AddmagazineComponent,
     ResetpasswordComponent,
-
+    ModalContent
 
   ],
   imports: [
@@ -57,6 +57,10 @@ import {FormBuilder} from '@angular/forms';
     MatIconModule,
     MatListModule
   ],
+  entryComponents: [
+    ModalContent
+  ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
