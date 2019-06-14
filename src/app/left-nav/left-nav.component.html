@@ -1,52 +1,81 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav e-nav" fixedInViewport
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="(isHandset$ | async) === false">
-    <mat-toolbar class="d_logo_wrapper">
-      <div class="d_logo_wrapper1">
-        <img src="../../assets/images/images_dashboard.png">
-      </div>
+    <mat-sidenav #drawer class="sidenav e-nav" fixedInViewport
+                 [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+                 [mode]="(isHandset$ | async) ? 'over' : 'side'"
+                 [opened]="(isHandset$ | async) === false">
+        <mat-toolbar class="d_logo_wrapper">
+            <div class="d_logo_wrapper1" routerLink="/dashboard">
+                <img src="../../assets/images/images_dashboard.png">
+            </div>
 
-    </mat-toolbar>
-    <mat-nav-list>
-      <a mat-list-item href="#" routerLink ="/dashboard" routerLinkActive="active">Dashboard</a>
-      <a mat-list-item href="#" routerLink ="/orders" routerLinkActive="active">Orders</a>
-      <a mat-list-item href="#" routerLink ="/analytics" routerLinkActive="active">Analytics</a><br>
-      <a mat-list-item href="#" routerLink ="/category" routerLinkActive="active">Category</a>
-      <a mat-list-item href="#" routerLink ="/collection" routerLinkActive="active">Collections</a>
-      <a mat-list-item href="#" routerLink ="/addmagazine" routerLinkActive="active">Add Magazine</a>
-      <a mat-list-item href="#" routerLink ="/managemagazine" routerLinkActive="active">Manage Magazine</a><br>
-      <a mat-list-item href="#">Online Store</a>
-      <a mat-list-item href="#">Employees</a>
-      <a mat-list-item href="#">Customers</a>
-      <a mat-list-item href="#">Settings</a>
+        </mat-toolbar>
+        <mat-nav-list>
+            <a mat-list-item href="#" routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+            <a mat-list-item href="#" routerLink="/adminlist" routerLinkActive="active">Admin Management</a>
+            <a mat-list-item href="#" routerLink="/orders" routerLinkActive="active">Orders</a>
+            <a mat-list-item href="#" routerLink="/analytics" routerLinkActive="active">Analytics</a><br>
+            <a mat-list-item href="#" routerLink="/category" routerLinkActive="active">Category</a>
+            <a mat-list-item href="#" routerLink="/collection" routerLinkActive="active">Collections</a>
+            <a mat-list-item href="#" routerLink="/addmagazine" routerLinkActive="active">Add Magazine</a>
+            <a mat-list-item href="#" routerLink="/managemagazine" routerLinkActive="active">Manage Magazine</a><br>
+            <a mat-list-item href="#">Online Store</a>
+            <a mat-list-item href="#">Employees</a>
+            <a mat-list-item href="#">Customers</a>
+            <a mat-list-item href="#">Settings</a>
 
 
-    </mat-nav-list>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <mat-toolbar color="primary">
-      <button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-      </button>
-      <span>Emagazine</span>
-      <span>
-          <mat-form-field>
-    <input matInput type="text" class="example-right-align">
-    <span matPrefix><i class="material-icons">
-search
-</i></span>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar color="primary">
+            <button
+                    type="button"
+                    aria-label="Toggle sidenav"
+                    mat-icon-button
+                    (click)="drawer.toggle()"
+                    *ngIf="isHandset$ | async">
+                <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+            </button>
+            <mat-toolbar class="top_searchbar">
+                <mat-toolbar-row>
+                    <span>
+                    <span>Emagazine</span>
+                    <span class="searchBar">
+              <!--<mat-form-field>-->
+                <!--<input matInput type="text" class="example-right-align" placeholder="Type to Search...">-->
+                    <!--<span matPrefix><i class="material-icons">search</i></span>-->
+              <!--</mat-form-field>-->
+                        <i class="material-icons">search</i><input class="searh_Bar" type="text" placeholder="Type to Search">
+                        </span>
+             </span>
+                    <span class="profile_wrap">
+                        <i class="material-icons">
+notifications
+</i><i class="material-icons">
+chat_bubble
+</i><i class="material-icons">
+message
+</i>
+                        <span class="image_withmenu">
+                        <span class="profile_image">
+                            <img src="https://www.remove.bg/assets/hd-samples/beautiful-blonde-hair-daytime-1047871-removebg-hd-ba1829b37faacd4580ff6e7c262d176894ff32c4168cbf911820a04514b21435.png">
+                        </span>
+                        <mat-menu #appMenu="matMenu">
+  <button mat-menu-item>Settings</button>
+  <button mat-menu-item>Help</button>
+</mat-menu>
 
-  </mat-form-field>
-      </span>
-    </mat-toolbar>
-    <!-- Add Content Here -->
-    <ng-content></ng-content>
-  </mat-sidenav-content>
+<button mat-icon-button [matMenuTriggerFor]="appMenu">
+  <mat-icon>more_vert</mat-icon>
+</button>
+                    </span>
+
+</span>
+                </mat-toolbar-row>
+            </mat-toolbar>
+
+        </mat-toolbar>
+        <!-- Add Content Here -->
+        <ng-content></ng-content>
+    </mat-sidenav-content>
 </mat-sidenav-container>
